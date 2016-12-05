@@ -1,0 +1,36 @@
+{
+  "name": "rip:list",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "ejs": "^2.5.3",
+    "express": "~4.0.0",
+    "express-session": "~1.0.3",
+    "mongodb": "^2.2.12",
+    "morgan": "~1.0.0",
+    "passport": "~0.2.0",
+    "passport-stormpath": "~0.2.0",
+    "static-favicon": "~1.0.0",
+    "stormpath": "~0.6.0",
+    "stylus": "0.42.3"
+  },
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chasezimmy/riplist.git"
+  },
+  "author": "chasezimmy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chasezimmy/riplist/issues"
+  },
+  "homepage": "https://github.com/chasezimmy/riplist#readme"
+}
