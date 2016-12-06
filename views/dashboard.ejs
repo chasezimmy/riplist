@@ -1,9 +1,10 @@
 <%- include header %>
+	<span><%= user.href%></span>
 		<% jobs.forEach(function(val, key) {%>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-9">
-					<h4><a href="<%= val.link %>"><%= val.title %></a></h4>
+					<h4><a href="<%= val.link %>"><%= val.title %></a></h4><span id="id_<%=key%>" style="display:none;"><%= val._id %></span>
 				</div>
 				<div class="col-xs-3">
 					<span style="float:right; font-size: 0.7rem;"><%= val.posted%></span>
@@ -19,7 +20,7 @@
 					<span class="tag tag-success"><%= val.payment%></span>
 				</div>
 				<div class="col-xs-3">
-					<span class="fa fa-star-o pull-right" onClick="reply_(this.id)" id='favorite_<%= key %>'></span>
+					<a href="#" class="fa fa-star-o pull-right" onClick="reply_(this.id); ajax_test($('#id_<%=key%>').text());" id='favorite_star_<%= key %>'></a>
 				</div>
 			</div>
 		</div>

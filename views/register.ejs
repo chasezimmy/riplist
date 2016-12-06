@@ -1,2 +1,65 @@
 <%- include header %>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-3"></div>
+		<div class="col-6">
+			<form class="form-horizontal" method="post" action="">
+
+				<legend>Sign up</legend>
+				<div class="input-group">
+					<span class="input-group-addon" id="username">Email</span>
+					<input type='email' name='username' class='form-control' id='username' placeholder='sondheim@gmail.com' aria-describedby='username' autofocus>
+				</div>
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon" id="password">Pass&nbsp;</span>
+					<input type='password' name='password' class='form-control' id='password' placeholder='&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;' aria-describedby='password'>
+				</div>
+				<br>
+				<div class="input-group">
+					<span style="display:block;">Member of AEA</span>
+					<label class="radio-inline" style="padding-right:5px;"><input type="radio" name="union" value="union"> Union</label>
+					<label class="radio-inline" style="padding-right:5px;"><input type="radio" name="union" value="emc"> EMC</label>
+					<label class="radio-inline" ><input type="radio" name="union" value="nonunion"> Non-union</label>
+				</div>
+				<div class="input-group">
+					<span style="display:block;">Gender</span>
+					<label class="radio-inline" style="padding-right:5px;"><input type="radio" name="gender" value="woman"> Woman</label>
+					<label class="radio-inline" ><input type="radio" name="gender" value="man"> Man</label>
+				</div>
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon" id="first">First</span>
+					<input type='text' name='first' class='form-control' id='first' aria-describedby='first' placeholder='Stephen' autofocus>
+				</div>
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon" id="middle">Middle</span>
+					<input type='text' name='middle' class='form-control' id='middle' aria-describedby='middle' placeholder="Joshua" autofocus>
+				</div>
+				<br>
+				<div class="input-group">
+					<span class="input-group-addon" id="last">Last</span>
+					<input type='text' name='last' class='form-control' id='last' aria-describedby='last' placeholder="Sondheim" autofocus>
+				</div>
+				<br>
+				<div class="input-group">
+					<div class="pull-right">
+						<button class="btn btn-primary" type='submit'>Create</button>
+		  			</div>
+		  		</div>
+		  		<br>
+
+				<% if (error) { %>
+			  		<div class="alert alert-dismissable alert-danger register-fail"><button class="close" type='button' data-dismiss='alert'>&times;</button> <p><%= error %></p></div>
+				<% } %>
+
+
+
+			</form>
+		</div>
+		<div class="col-lg-3"></div>
+	</div>
+</div>
+
 <%- include footer %>
